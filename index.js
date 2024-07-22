@@ -1,14 +1,15 @@
 const http = require('http');
+const port = 3001; 
 
-const hostname = '127.0.0.1';
-const port = 3000;
+const requestHandler = (request, response) => {
+  response.end('Hello, World!');
+};
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello, World!\n');
-});
+const server = http.createServer(requestHandler);
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+server.listen(port, (err) => {
+  if (err) {
+    return console.log('Error:', err);
+  }
+  console.log(`Server is listening on ${port}`);
 });
