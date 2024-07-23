@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.001" tests="0" failures="0">
+<testsuites name="Mocha Tests" tests="1" failures="0" errors="0" skipped="0" time="0.001">
+  <testsuite name="Example Test Suite" tests="1" failures="0" errors="0" skipped="0" time="0.001">
+    <testcase classname="example" name="should pass" time="0.001"/>
+  </testsuite>
 </testsuites>
