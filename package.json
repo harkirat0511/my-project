@@ -2,9 +2,10 @@
   "name": "my-project",
   "version": "1.0.0",
   "main": "index.js",
-"scripts": {
-  "test": "mocha --reporter mocha-junit-reporter"
-},
+  "scripts": {
+    "test": "mocha --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results.xml"
+
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
